@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: springcloud_eureka
+
+server:
+  port: 8671
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8671/eureka/
+    healthcheck:
+      enabled: false
+  server:
+    enable-self-preservation: false
