@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 9999
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8671/eureka/
+zuul:
+  routes:
+    common:
+      path: /common/**
+      url: http://localhost:8888/common
+    test:
+      path: /test/**
+      url: http://localhost:8889/test

@@ -6,7 +6,18 @@ spring:
       discovery:
         enabled: true
         service-id: config
+    #springCloudConfigBus
+    bus:
+      enabled: true
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8671/eureka/
+
+#监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
