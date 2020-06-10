@@ -1,6 +1,6 @@
 spring:
   application:
-    name: common
+    name: commons
 
 server:
   port: 8888
