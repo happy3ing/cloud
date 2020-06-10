@@ -2,11 +2,11 @@ spring:
   cloud:
     config:
       label: master
-      name: commons,common
+      name: common
       discovery:
         enabled: true
         service-id: config
-      profile: dev
+#      profile: dev
     #springCloudConfigBus
     bus:
       enabled: true
