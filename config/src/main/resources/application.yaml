@@ -11,7 +11,7 @@ spring:
           username: 1049909110@qq.com
           password: mengying0308!@#
           clone-on-start: true
-          search-paths: /config/{application}
+          search-paths: /config/{application}/
 #          search-paths: '/config/common'
 server:
   port: 9005
