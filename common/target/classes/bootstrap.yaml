@@ -2,7 +2,7 @@ spring:
   cloud:
     config:
       label: master
-      name: common
+      name: commons
       discovery:
         enabled: true
         service-id: config
