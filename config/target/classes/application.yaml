@@ -8,8 +8,8 @@ spring:
 #          search-locations: classpath:/config/{application}
         git:
           uri: https://github.com/happy3ing/cloud.git
-          username: 1049909110@qq.com
-          password: mengying0308!@#
+          username:
+          password:
           clone-on-start: true
           search-paths: /config/{application}/
 #          search-paths: '/config/common'
