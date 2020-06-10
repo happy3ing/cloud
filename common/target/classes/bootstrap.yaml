@@ -6,6 +6,9 @@ spring:
       discovery:
         enabled: true
         service-id: config
+    #springCloudConfigBus
+    bus:
+      enabled: true
 eureka:
   client:
     service-url:
@@ -17,3 +20,4 @@ management:
     web:
       exposure:
         include: refresh
+
