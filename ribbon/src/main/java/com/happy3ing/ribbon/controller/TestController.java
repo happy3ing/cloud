@@ -21,4 +21,10 @@ public class TestController {
     public String test(){
         return restTemplate.getForObject("http://common/common/test",String.class);
     }
+
+    @GetMapping("/test1")
+    public String test1(){
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject("http://localhost:8888/common/test",String.class);
+    }
 }
