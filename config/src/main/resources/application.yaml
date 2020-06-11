@@ -12,6 +12,17 @@ spring:
           password:
           clone-on-start: true
           search-paths: /config/{application}/
+    bus:
+      #开启跟踪总线事件
+      trace:
+        enabled: true
+      #启用springcloud config bus
+      enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 #          search-paths: '/config/common'
 server:
   port: 9005
@@ -21,3 +32,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8671/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
