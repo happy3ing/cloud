@@ -10,6 +10,13 @@ spring:
     #springCloudConfigBus
     bus:
       enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
@@ -21,4 +28,3 @@ management:
     web:
       exposure:
         include: refresh
-
